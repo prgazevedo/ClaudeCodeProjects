@@ -43,6 +43,7 @@ This is a VSCode extension called "Claude Config Manager" that manages CLAUDE.md
 - **Template system**: Create CLAUDE.md files from predefined templates with variable substitution
 - **Git integration**: Full Git workflow with pull, commit, and push operations
 - **Status bar integration**: Shows sync status and provides quick access to sync command
+- **Source repository linking**: Automatically adds metadata linking back to the original project repository
 
 ## Configuration Settings
 - `claude-config.repositoryUrl` - GitHub repository URL for configs
