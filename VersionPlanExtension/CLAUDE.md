@@ -63,3 +63,16 @@ This is a VSCode extension called "Claude Config Manager" that manages CLAUDE.md
 - `vscode` - VS Code API
 - `typescript` - Development dependency
 - `eslint` - Code linting
+
+## Recent Bug Fixes (v1.0.0)
+- Fixed simple-git initialization error on extension activation
+- Removed synchronous git initialization from constructor
+- Added lazy-loaded git initialization with proper error handling
+- Improved extension activation reliability
+- Added better debug logging for troubleshooting
+
+## Release Information
+- **Current Version**: v1.0.0
+- **Package File**: claude-config-manager-1.0.0.vsix
+- **Release Date**: July 2025
+- **GitHub Repository**: https://github.com/prgazevedo/VersionPlanExtension
