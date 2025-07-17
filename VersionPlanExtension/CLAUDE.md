@@ -90,7 +90,7 @@ This is a VSCode extension called "Claude Config Manager" that manages CLAUDE.md
 - **Duplicate Prevention**: Prevents duplicate metadata when re-syncing files
 
 ## Release Information
-- **Current Version**: v1.0.0
-- **Package File**: claude-config-manager-1.0.0.vsix
+- **Current Version**: v1.1.0
+- **Package File**: claude-config-manager-1.1.0.vsix
 - **Release Date**: July 2025
 - **GitHub Repository**: https://github.com/prgazevedo/VersionPlanExtension
