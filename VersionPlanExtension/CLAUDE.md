@@ -72,6 +72,12 @@ This is a VSCode extension called "Claude Config Manager" that manages CLAUDE.md
 - Improved extension activation reliability
 - Added better debug logging for troubleshooting
 
+## New Features (v1.1.0)
+- **Source Repository Linking**: Automatically detects and adds source repository metadata to synced CLAUDE.md files
+- **Metadata Injection**: Adds both hidden HTML comments and visible markdown headers with project information
+- **URL Normalization**: Converts SSH URLs to HTTPS for better web compatibility
+- **Duplicate Prevention**: Prevents duplicate metadata when re-syncing files
+
 ## Release Information
 - **Current Version**: v1.0.0
 - **Package File**: claude-config-manager-1.0.0.vsix
