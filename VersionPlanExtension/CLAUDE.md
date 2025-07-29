@@ -173,6 +173,19 @@ The extension provides comprehensive conversation history management:
 - Conversation files (`.claude/.chats/`) are excluded from Git tracking to prevent accidental secret exposure
 - GitHub push protection integration to block commits containing sensitive data
 
+### Usage Tracking & Statistics
+The extension provides comprehensive token usage monitoring and cost estimation:
+
+**Token Usage Tracking:**
+- Monitors and tracks estimated token usage with cost estimation for each operation
+- Tracks usage across different conversations and Claude Code interactions
+- Provides real-time usage notifications after operations (configurable)
+
+**Usage Statistics:**
+- Comprehensive reporting with daily, weekly, and monthly breakdowns
+- Cost estimation and usage analytics to help manage Claude usage
+- Integration with conversation history for detailed usage insights
+
 ## Recent Updates
 
 ### v3.2.0 - Enhanced Conversation Viewer UI
