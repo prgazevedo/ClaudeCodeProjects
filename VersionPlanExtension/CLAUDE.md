@@ -127,6 +127,10 @@ The extension uses VSCode configuration with prefix `claude-config`:
 **Conversation Settings:**
 - `conversationDataPath` - Custom path to Claude conversation data directory (default: ~/.claude/projects)
 
+**Usage Tracking Settings:**
+- `tokenTrackingEnabled` - Enable/disable token usage tracking (default: true)
+- `showUsageNotifications` - Show usage notifications after operations (default: true)
+
 ## How It Works
 
 ### CLAUDE.md Management
