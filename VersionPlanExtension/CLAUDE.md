@@ -103,6 +103,9 @@ Commands are modularized in `/src/commands/`:
   - `viewConversationCommand` - Open conversation in webview
   - `exportConversationCommand` - Export conversations to files
 
+**Usage Commands:**
+- `usage.ts` - View usage statistics and token tracking information
+
 ### Key Dependencies
 
 - `simple-git` - Git operations
