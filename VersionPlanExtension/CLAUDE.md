@@ -42,18 +42,34 @@ The extension includes a custom activity bar icon with dual sidebar views for bo
 ## Architecture
 
 ### Core Components
+<<<<<<< Updated upstream
 
 **Extension Entry Point** (`src/extension.ts`):
 - Manages extension lifecycle (activate/deactivate)
 - Registers all commands and initializes core managers
 - Handles configuration changes and auto-sync toggle
 - Manages status bar indicator
+=======
+1. **Extension Entry Point** (`src/extension.ts`): Main activation logic, command registration, and status bar management
+2. **Repository Manager** (`src/repository.ts`): Handles Git operations, cloning, syncing, and auto-commits
+3. **File Manager** (`src/fileManager.ts`): Manages CLAUDE.md files, file watching, and sync operations
+4. **Template Manager** (`src/templates.ts`): Handles template processing with variable substitution
+5. **Token Tracker** (`src/tokenTracker.ts`): Monitors token usage and provides cost estimation and statistics
+
+### Commands Structure
+- `src/commands/init.ts` - Initialize repository command
+- `src/commands/sync.ts` - Manual sync command
+- `src/commands/create.ts` - Create from template command
+- `src/commands/edit.ts` - Edit CLAUDE.md command
+- `src/commands/usage.ts` - View usage statistics command
+>>>>>>> Stashed changes
 
 **RepositoryManager** (`src/repository.ts`):
 - Handles Git operations using `simple-git` library
 - Implements lazy Git initialization for better performance
 - Manages workspace Git operations (not centralized repository)
 
+<<<<<<< Updated upstream
 **ClaudeFileManager** (`src/fileManager.ts`):
 - Manages CLAUDE.md files in workspace
 - Implements file watching for auto-sync functionality
@@ -63,6 +79,25 @@ The extension includes a custom activity bar icon with dual sidebar views for bo
 - Implements VSCode TreeDataProvider for CLAUDE.md sidebar view
 - Shows CLAUDE.md status and provides action buttons
 - Integrates with activity bar custom icon
+=======
+## Key Features
+- **Auto-sync**: Watches CLAUDE.md files for changes and automatically syncs to repository
+- **Project-based organization**: Each project gets its own folder in the repository (`ProjectName/CLAUDE.md`)
+- **Template system**: Create CLAUDE.md files from predefined templates with variable substitution
+- **Git integration**: Full Git workflow with pull, commit, and push operations
+- **Status bar integration**: Shows sync status and provides quick access to sync command
+- **Source repository linking**: Automatically adds metadata linking back to the original project repository
+- **Token usage tracking**: Monitors and tracks estimated token usage with cost estimation for each operation
+- **Usage statistics**: Comprehensive reporting with daily, weekly, and monthly breakdowns
+
+## Configuration Settings
+- `claude-config.repositoryUrl` - GitHub repository URL for configs
+- `claude-config.autoSync` - Enable/disable automatic syncing
+- `claude-config.autoCommit` - Enable/disable automatic commits
+- `claude-config.defaultTemplate` - Default template for new files
+- `claude-config.tokenTrackingEnabled` - Enable/disable token usage tracking
+- `claude-config.showUsageNotifications` - Show usage notifications after operations
+>>>>>>> Stashed changes
 
 **ConversationManager** (`src/conversation/ConversationManager.ts`):
 - Parses JSONL conversation files from Claude Code local storage
@@ -109,6 +144,7 @@ Commands are modularized in `/src/commands/`:
 
 - **Icon**: Custom PNG icon (`assets/claude-icon.png`) converted from SVG using Sharp
 
+<<<<<<< Updated upstream
 ## Configuration Settings
 
 The extension uses VSCode configuration with prefix `claude-config`:
@@ -202,6 +238,13 @@ The extension provides comprehensive conversation history management:
 
 
 
+=======
+## Release Information
+- **Current Version**: v1.1.0
+- **Package File**: claude-config-manager-1.1.0.vsix
+- **Release Date**: July 2025
+- **GitHub Repository**: https://github.com/prgazevedo/VersionPlanExtension
+>>>>>>> Stashed changes
 
 # PROJECT_PLAN Integration
 # Added by Claude Config Manager Extension
