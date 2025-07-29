@@ -36,12 +36,14 @@ This is a VSCode extension called "Claude Config Manager" that manages CLAUDE.md
 2. **Repository Manager** (`src/repository.ts`): Handles Git operations, cloning, syncing, and auto-commits
 3. **File Manager** (`src/fileManager.ts`): Manages CLAUDE.md files, file watching, and sync operations
 4. **Template Manager** (`src/templates.ts`): Handles template processing with variable substitution
+5. **Token Tracker** (`src/tokenTracker.ts`): Monitors token usage and provides cost estimation and statistics
 
 ### Commands Structure
 - `src/commands/init.ts` - Initialize repository command
 - `src/commands/sync.ts` - Manual sync command
 - `src/commands/create.ts` - Create from template command
 - `src/commands/edit.ts` - Edit CLAUDE.md command
+- `src/commands/usage.ts` - View usage statistics command
 
 ### Template System
 - Templates in `templates/` directory with variable substitution using `{{variable}}` syntax
@@ -55,12 +57,16 @@ This is a VSCode extension called "Claude Config Manager" that manages CLAUDE.md
 - **Git integration**: Full Git workflow with pull, commit, and push operations
 - **Status bar integration**: Shows sync status and provides quick access to sync command
 - **Source repository linking**: Automatically adds metadata linking back to the original project repository
+- **Token usage tracking**: Monitors and tracks estimated token usage with cost estimation for each operation
+- **Usage statistics**: Comprehensive reporting with daily, weekly, and monthly breakdowns
 
 ## Configuration Settings
 - `claude-config.repositoryUrl` - GitHub repository URL for configs
 - `claude-config.autoSync` - Enable/disable automatic syncing
 - `claude-config.autoCommit` - Enable/disable automatic commits
 - `claude-config.defaultTemplate` - Default template for new files
+- `claude-config.tokenTrackingEnabled` - Enable/disable token usage tracking
+- `claude-config.showUsageNotifications` - Show usage notifications after operations
 
 ## Development Notes
 - Uses `simple-git` library for Git operations
@@ -94,3 +100,21 @@ This is a VSCode extension called "Claude Config Manager" that manages CLAUDE.md
 - **Package File**: claude-config-manager-1.1.0.vsix
 - **Release Date**: July 2025
 - **GitHub Repository**: https://github.com/prgazevedo/VersionPlanExtension
+
+# PROJECT_PLAN Integration
+# Added by Claude Config Manager Extension
+
+When working on this project, always refer to and maintain the project plan located at `.claude/.plans/PROJECT_PLAN.md`.
+
+**Instructions for Claude Code:**
+1. **Read the project plan first** - Always check `.claude/.plans/PROJECT_PLAN.md` when starting work to understand the project context, architecture, and current priorities.
+2. **Update the project plan regularly** - When making significant changes, discoveries, or completing major features, update the relevant sections in PROJECT_PLAN.md to keep it current.
+3. **Use it for context** - Reference the project plan when making architectural decisions, understanding dependencies, or explaining code to ensure consistency with project goals.
+
+**Plan Mode Integration:**
+- **When entering plan mode**: Read the current PROJECT_PLAN.md to understand existing context and priorities
+- **During plan mode**: Build upon and refine the existing project plan structure
+- **When exiting plan mode**: ALWAYS update PROJECT_PLAN.md with your new plan details, replacing or enhancing the relevant sections (Architecture, TODO, Development Workflow, etc.)
+- **Plan persistence**: The PROJECT_PLAN.md serves as the permanent repository for all planning work - plan mode should treat it as the single source of truth
+
+This ensures better code quality and maintains project knowledge continuity across different Claude Code sessions and plan mode iterations.
