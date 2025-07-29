@@ -81,6 +81,11 @@ The extension includes a custom activity bar icon with dual sidebar views for bo
 - Includes Expand All/Collapse All controls for conversation section management
 - Handles conversation export to multiple formats (Markdown, JSON, Text)
 
+**Token Tracker** (`src/tokenTracker.ts`):
+- Monitors token usage and provides cost estimation and statistics
+- Tracks usage across different conversations and operations
+- Provides comprehensive reporting with daily, weekly, and monthly breakdowns
+
 
 ### Command Structure
 
