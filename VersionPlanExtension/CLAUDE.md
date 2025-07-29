@@ -95,9 +95,16 @@ This is a VSCode extension called "Claude Config Manager" that manages CLAUDE.md
 - **URL Normalization**: Converts SSH URLs to HTTPS for better web compatibility
 - **Duplicate Prevention**: Prevents duplicate metadata when re-syncing files
 
+## Version Updates (v3.2.2)
+- **Usage Tracking & Statistics**: Added comprehensive token usage tracking with cost estimation
+- **Conversation Browser Integration**: Enhanced UI for tracking usage across different conversations
+- **Debugging Tools**: Added debugging functionality for testing and troubleshooting
+- **Icon Visibility Fix**: Improved extension icon visibility without workspace requirement
+- **Publisher ID Compliance**: Updated for VSCode marketplace compliance
+
 ## Release Information
-- **Current Version**: v1.1.0
-- **Package File**: claude-config-manager-1.1.0.vsix
+- **Current Version**: v3.2.2
+- **Package File**: claude-config-manager-3.2.2.vsix
 - **Release Date**: July 2025
 - **GitHub Repository**: https://github.com/prgazevedo/VersionPlanExtension
 
@@ -118,3 +125,9 @@ When working on this project, always refer to and maintain the project plan loca
 - **Plan persistence**: The PROJECT_PLAN.md serves as the permanent repository for all planning work - plan mode should treat it as the single source of truth
 
 This ensures better code quality and maintains project knowledge continuity across different Claude Code sessions and plan mode iterations.
+
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
