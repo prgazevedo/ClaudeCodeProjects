@@ -192,6 +192,14 @@ The extension provides comprehensive token usage monitoring and cost estimation:
 
 ## Recent Updates
 
+### v3.2.2 - Usage Tracking & Statistics Integration
+
+- **Token Usage Tracking**: Added comprehensive token usage monitoring with cost estimation
+- **Usage Statistics**: Comprehensive reporting with daily, weekly, and monthly breakdowns  
+- **Token Tracker Component**: New core component for tracking usage across conversations and operations
+- **Usage Commands**: Added usage statistics viewing and management commands
+- **Configuration Settings**: New settings for token tracking and usage notifications
+
 ### v3.2.0 - Enhanced Conversation Viewer UI
 
 - **Expand/Collapse All Controls**: Added dedicated buttons for quick conversation section management
