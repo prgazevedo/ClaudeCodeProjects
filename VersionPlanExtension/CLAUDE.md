@@ -81,11 +81,6 @@ The extension includes a custom activity bar icon with dual sidebar views for bo
 - Includes Expand All/Collapse All controls for conversation section management
 - Handles conversation export to multiple formats (Markdown, JSON, Text)
 
-**Token Tracker** (`src/tokenTracker.ts`):
-- Monitors token usage and provides cost estimation and statistics
-- Tracks usage across different conversations and operations
-- Provides comprehensive reporting with daily, weekly, and monthly breakdowns
-
 
 ### Command Structure
 
@@ -102,9 +97,6 @@ Commands are modularized in `/src/commands/`:
   - `openConversationsCommand` - Quick pick conversation selector
   - `viewConversationCommand` - Open conversation in webview
   - `exportConversationCommand` - Export conversations to files
-
-**Usage Commands:**
-- `usage.ts` - View usage statistics and token tracking information
 
 ### Key Dependencies
 
@@ -126,10 +118,6 @@ The extension uses VSCode configuration with prefix `claude-config`:
 
 **Conversation Settings:**
 - `conversationDataPath` - Custom path to Claude conversation data directory (default: ~/.claude/projects)
-
-**Usage Tracking Settings:**
-- `tokenTrackingEnabled` - Enable/disable token usage tracking (default: true)
-- `showUsageNotifications` - Show usage notifications after operations (default: true)
 
 ## How It Works
 
@@ -177,43 +165,7 @@ The extension provides comprehensive conversation history management:
 - Conversation files (`.claude/.chats/`) are excluded from Git tracking to prevent accidental secret exposure
 - GitHub push protection integration to block commits containing sensitive data
 
-### Usage Tracking & Statistics
-The extension provides comprehensive token usage monitoring and cost estimation:
-
-**Token Usage Tracking:**
-- Monitors and tracks estimated token usage with cost estimation for each operation
-- Tracks usage across different conversations and Claude Code interactions
-- Provides real-time usage notifications after operations (configurable)
-
-**Usage Statistics:**
-- Comprehensive reporting with daily, weekly, and monthly breakdowns
-- Cost estimation and usage analytics to help manage Claude usage
-- Integration with conversation history for detailed usage insights
-
 ## Recent Updates
-
-### v3.2.2 - Token Tracker Stability & Bug Fixes
-
-- **TokenTracker Singleton Initialization**: Fixed singleton initialization and error handling for more stable token tracking
-- **Extension Icon Visibility**: Improved extension icon visibility without workspace requirement  
-- **Publisher ID Compliance**: Updated publisher ID for VSCode marketplace compliance
-- **Improved Error Handling**: Enhanced error handling in token tracking components
-- **Stability Improvements**: Fixed various initialization race conditions and edge cases
-
-### v3.2.3 - Usage Statistics Display Improvements
-
-- **Fixed Usage Statistics Display**: Corrected zero values in total usage, operations count, and period displays
-- **Cost Formatting**: All costs now rounded to cents (2 decimal places) for better readability
-- **Better Empty State Handling**: Usage periods now show meaningful descriptions when no data is available
-- **Improved Period Descriptions**: Daily/weekly/monthly usage shows actual counts or "No recent activity"
-
-### v3.2.2 - Usage Tracking & Statistics Integration
-
-- **Token Usage Tracking**: Added comprehensive token usage monitoring with cost estimation
-- **Usage Statistics**: Comprehensive reporting with daily, weekly, and monthly breakdowns  
-- **Token Tracker Component**: New core component for tracking usage across conversations and operations
-- **Usage Commands**: Added usage statistics viewing and management commands
-- **Configuration Settings**: New settings for token tracking and usage notifications
 
 ### v3.2.0 - Enhanced Conversation Viewer UI
 
